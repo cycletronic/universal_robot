@@ -1,0 +1,2 @@
+1. Follow README and setup simulation enviorment for UR3 robot.
+2. Add enviorment in scens/ur3_coffee_table.scene to the planning scene.

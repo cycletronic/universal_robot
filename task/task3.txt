@@ -1,0 +1,4 @@
+1. Consider the case where padding is added to each object in the enviorment such that the planned trajectory keeps a safe distance from each object.
+2. If the starting point is determined to be in collision while the actual robot is not (collision detected in the padding), how can we move safely away from the "colliding object"?
+3. Implement a solution for the above senario and create tests to verify it.
+4. Create a document discribing how it works and how to verify it with the test.
