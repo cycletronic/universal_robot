@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<launch>
+
+  <group ns="ath__">
+    <include file="$(find ath_demo)/launch/task1.launch"/>
+    <include file="$(find ath_demo)/launch/task2_chomp.launch"/>
+    <include file="$(find ath_demo)/launch/task2_ompl.launch"/>
+  </group>
+
+</launch>
