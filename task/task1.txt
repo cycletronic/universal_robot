@@ -1,2 +1,6 @@
 1. Follow README and setup simulation enviorment for UR3 robot.
 2. Add enviorment in scens/ur3_coffee_table.scene to the planning scene.
+
+Comments:
+- Completed (also with parts of task2) and placed in ath_demo/launch/task1.launch
+- Can test with roslaunch ath_demo launch/task1.launch

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>ath_joint_planner_service</name>
+  <version>1.2.7</version>
+  <description>
+     Exercise for Artly. Service that takes joint state goals and plans trajectory.
+  </description>
+  <author>Alan Atherton</author>
+  <maintainer email="jalanatherton@gmail.com">Alan Atherton</maintainer>
+
+  <license>BSD</license>
+
+  <build_depend>pluginlib</build_depend>
+  <build_depend>eigen</build_depend>
+  <build_depend>moveit_core</build_depend>
+  <build_depend>moveit_msgs</build_depend>
+  <build_depend>ath_msgs</build_depend>
+  <build_depend>moveit_ros_planning</build_depend>
+  <build_depend>moveit_ros_planning_interface</build_depend>
+  <build_depend>interactive_markers</build_depend>
+  <build_depend>geometric_shapes</build_depend>
+  <build_depend>moveit_visual_tools</build_depend>
+  <build_depend>rviz_visual_tools</build_depend>
+  <build_depend>rosbag</build_depend>
+  <build_depend>tf2_ros</build_depend>
+  <build_depend>tf2_eigen</build_depend>
+  <build_depend>tf2_geometry_msgs</build_depend>
+
+  <exec_depend>pluginlib</exec_depend>
+  <exec_depend>eigen</exec_depend>
+  <exec_depend>moveit_core</exec_depend>
+  <exec_depend>moveit_msgs</exec_depend>
+  <exec_depend>ath_msgs</exec_depend>
+  <exec_depend>moveit_ros_planning</exec_depend>
+  <exec_depend>moveit_ros_planning_interface</exec_depend>
+  <exec_depend>interactive_markers</exec_depend>
+  <exec_depend>geometric_shapes</exec_depend>
+  <exec_depend>moveit_visual_tools</exec_depend>
+  <exec_depend>rviz_visual_tools</exec_depend>
+  <exec_depend>rosbag</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>tf2_eigen</exec_depend>
+  <exec_depend>tf2_geometry_msgs</exec_depend>
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>ur_gazebo</exec_depend>
+  <exec_depend>ur3_moveit_config</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <depend>ur_description</depend>
+
+  <test_depend>roslaunch</test_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+
+  <name>ath_demo</name>
+  <version>1.2.7</version>
+  <description>
+     Exercise for Artly. Launch file to bring up Gazebo with the UR3 robot and a coffee table scene, moveIt, and RViz, and launch trajectory planning node.
+  </description>
+  <author>Alan Atherton</author>
+  <maintainer email="jalanatherton@gmail.com">Alan Atherton</maintainer>
+
+  <license>BSD</license>
+
+  <!--
+  <exec_depend>ath_joint_planner_service</exec_depend>
+  <exec_depend>ath_collision_egress</exec_depend>
+-->
+  <exec_depend>moveit_ros_move_group</exec_depend>
+  <exec_depend>moveit_planners_ompl</exec_depend>
+  <exec_depend>moveit_ros_visualization</exec_depend>
+  <exec_depend>moveit_fake_controller_manager</exec_depend>
+  <exec_depend>moveit_simple_controller_manager</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>ur_gazebo</exec_depend>
+  <exec_depend>ur3_moveit_config</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <depend>ur_description</depend>
+
+  <test_depend>roslaunch</test_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+</package>

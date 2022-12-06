@@ -1,4 +1,21 @@
 1. Follow https://ros-planning.github.io/moveit_tutorials/doc/chomp_planner/chomp_planner_tutorial.html#using-chomp-as-a-post-processor-for-ompl to setup motion planning procedure to use ompl + chomp.
+  Comments:
+    - CHOMP binaries are not part of moveit.  I resolved by building moveit from source, but that is a long build time.
+      When running, moveit crashed with this message:
+      `[ERROR] [1670285358.879436421, 62.228000000]: Creating body from shape: Unknown shape type 5`
+      This appears to be due to the provided scene using a PLANE object type, which is unsupported with this particular codebase, apparently.
+      I created another simple scene in ath_demo/scene/boxes.scene for this task.
+      task2_chomp.launch is configured to run with CHOMP finalizing, assuming the binaries are built on your system.
+      task2_ompl.launch is configured to run with default OMPL configuration.
+
+      These changes were made in the ur3_moveit_config launch files directly.
+
 2. Create a launch file to launch Gazebo, rviz and moveit.
+  Comment:
+    Can run with task2_chomp.launch or task2_ompl.launch
 3. Write a service to plan/move to a given joint state included in the request.
+   Partially completed, located in ath_joint_planner_service
+   In the middle of implementation, I realized it would probably make more sense to wrap existing moveit ros services or actionlib interfaces, instead of
+     using the move_group API.  I have more to learn about the moveit framework.
 4. Create a document discribing how it works.
+  This is in ath_joint_planner_service/README.md
